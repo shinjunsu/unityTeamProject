@@ -17,6 +17,7 @@ public class NetworkSample : KWSingleton<NetworkSample>
 	override public void Awake()
 	{
 		base.Awake();
+		
 	}
 
 	public void ConnectServer(string szIP, int nPort)

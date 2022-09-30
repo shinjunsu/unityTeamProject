@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,6 +8,7 @@ namespace KWNET
 	[System.Serializable]
 	public class RoomObject
 	{
+
 		public int m_nIdx;
 		public NetVector3[] m_transform = new NetVector3[NetConst.SIZE_OBJECT_TRASNFORM];
 		public void ReadBin(BinaryReader br)
@@ -32,6 +34,7 @@ namespace KWNET
 				m_transform[i].m_X = obj.m_transform[i].m_X;
 				m_transform[i].m_Y = obj.m_transform[i].m_Y;
 				m_transform[i].m_Z = obj.m_transform[i].m_Z;
+		
 			}
 		}
 	}
